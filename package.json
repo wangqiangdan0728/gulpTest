@@ -1,0 +1,20 @@
+{
+    "name": "gulptest",
+    "version": "1.0.0",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "browserify": {
+        "transform": ["browserify-shim"]
+    },
+    "browserify-shim": {
+        "angular": "angular"
+    },
+    "browser": {
+        "angular": "./bower/bower_components/angular/angular.js"
+    }
+}

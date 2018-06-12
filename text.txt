@@ -1,0 +1,60 @@
+//项目下安装browserify
+npm install browserify
+
+//将要打包的js,合并一个,打包输出到main.js
+browserify ./a.js ./c.js ./b.js -o ./main.js
+
+//安装gulp，安装在项目里，不需要全局，即不需要-g;
+npm install gulp
+
+//安装shelljs,执行shell脚本；
+npm install shelljs
+
+//用task的任务名称为参数，调用不同的任务
+npm install run-sequence
+
+//替代gulp的监听事件，有很多API
+npm install watchify
+
+//构建第三方类库
+
+//管理第三方类库,作为全局来使用
+npm install -g bower
+
+//处理对于没有用commonJS规则(即module.exports)来模块化的类库
+//-D 加入依赖列表
+npm install -D browserify-shim
+
+接着在package.json文件进行配置。
+
+//最小化文件
+npm install gulp-uglify
+
+//生成文件流
+npm install vinyl-source-stream
+
+//文件流转化成buffer,便于uglify读取
+npm install vinyl-buffer
+
+//在gulp流程中加入判断，例如说：来处理本地开发或发版是否需要uglify
+npm install gulp-if
+
+//设置NODE_ENV等于prod，并且执行gulp
+set NODE_ENV=prod&& gulp; [prod与&&之间不要留空格，否则空格也会被当作字符串一部分传入]
+
+//编译es6为es5
+npm install gulp-babel
+
+//告诉babel,转化的类型
+npm install babel-preset-es2015
+
+//css的构建
+
+//minify css的工具
+npm install gulp-clean-css
+
+//合并多个css文件到一个
+npm install gulp-concat
+
+//构建scss文件
+npm install gulp-sass
